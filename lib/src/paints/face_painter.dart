@@ -4,11 +4,12 @@ import '../../face_camera.dart';
 import '../res/app_images.dart';
 
 class FacePainter extends CustomPainter {
-  FacePainter(
-      {required this.imageSize,
-      this.face,
-      required this.indicatorShape,
-      this.indicatorAssetImage});
+  FacePainter({
+    required this.imageSize,
+    this.face,
+    required this.indicatorShape,
+    this.indicatorAssetImage,
+  });
   final Size imageSize;
   double? scaleX, scaleY;
   final Face? face;
